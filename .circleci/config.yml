@@ -20,7 +20,7 @@ jobs:
     <<: *defaults
     steps:
       - checkout
-      - npm i
+      - run: npm i
       - restore_cache:
           keys:
             - "npm-packages"
@@ -30,7 +30,7 @@ jobs:
     <<: *defaults
     steps:
       - checkout
-      - npm i
+      - run: npm i
       - restore_cache:
           keys:
             - "npm-packages"
